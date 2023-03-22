@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>3rd question</title>
+    </head>
+    <body>
+        <script>
+            let pla = [2, 5, 3, 7, 8, 0, 9, 1, 4, 6];
+let win = Number(prompt("Enter Winner"));
+let pos = 0;
+for (i = 0; i < pla.length; i++) {
+    if (pla[i] == win) {
+        pos = i;
+    }
+}
+let temp = pla[0];
+pla[0] = pla[pos];
+pla[pos] = temp;
+console.log(pla);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>1st question</title>
+    </head>
+    <body>
+        <script>
+            let empid = [];
+for (i = 0; i < 10; i++) {
+    n = Number(prompt("Enter Employee ID:"));
+    empid[i] = n;
+}
+function bubblesort(array){
+    for(let i=0; i<empid.length;i++){
+    for(let j=0; j<(empid.length-i-1);j++)
+    {
+        if(empid[j] > empid[j+1])
+        {
+       var temp = empid[j];
+       empid[j] = empid[j + 1];
+       empid[j+1] =temp;
+        }
+    }
+    }
+    return array;
+}
+console.log(bubblesort(empid));
+        </script>
+    </body>
+</html>

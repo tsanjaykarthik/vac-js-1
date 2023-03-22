@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>2nd question</title>
+    </head>
+    <body>
+        <script>
+            var students = ["not selected", 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
+var french = [];
+var german = [];
+for (let i = 1; i <students.length; i++) 
+{
+    if (i % 2 !== 0)
+    {
+        french[french.length]=i;
+    }
+}
+    console.log("french:",french);
+for (let i = 1; i <students.length; i++)
+{
+    if(i % 2 ==0)
+    {
+        german[german.length]=i;
+    }
+}
+console.log("german:",german);
+console.log("No language selected:",students[0]);
+        </script>
+    </body>
+</html>
